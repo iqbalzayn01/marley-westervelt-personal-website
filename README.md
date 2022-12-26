@@ -8,15 +8,15 @@ Marley Westervelt a professional UI/UX Designer - PORTFOLIO
 
 This is a Portfolio Website exploration. I hope you guys will like it.
 
-================================================
+-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 
 Thanks!.
 
 Design Tool - Figma
-
-😀 Social Media :
-
-Instagram | Twitter | Github
+HTML
+CSS
+Javascript
+Tailwindcss
 
 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 
