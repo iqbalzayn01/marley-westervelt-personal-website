@@ -1078,10 +1078,6 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hover\:border-0:hover {
-  border-width: 0px;
-}
-
 .hover\:bg-lightgreen1:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(254 255 254 / var(--tw-bg-opacity));
