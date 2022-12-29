@@ -16,94 +16,82 @@
 </head>
 <body class="bg-black1 font-nunitoSans relative">
     <!-- Navbar: Start -->
-    <nav id="navbar" class="fixed flex flex-row justify-between items-center w-full z-50 mx-auto pt-3 pb-5 px-11 mb-36">
+    <nav id="navbar" class="fixed flex flex-row justify-between items-center w-full z-50 mx-auto pt-3 pb-5 px-5 md:px-11">
         <!-- Nav Brand: Start -->
-        <a href="index.html" class="navbar-brand">
+        <a id="nav-brand" href="#hero" class="navbar-brand z-50">
             <h1 class="md:text-headline2 text-xl text-green3">Marley Westervelt</h1>
         </a>
         <!-- Nav Brand: Start -->
 
+        <!-- Button Toggle: Start -->
+        <button id="menu-toggler" class="block md:hidden" type="button" class="">
+            <svg width="48" height="48" aria-hidden="true" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 36V33H42V36H18ZM6 25.5V22.5H42V25.5H6ZM6 15V12H42V15H6Z" fill="#FEFFFE"/>
+            </svg>                
+        </button>
+        <!-- Button Toggle: End -->
+
         <!-- Nav-links: Start -->
-        <ul class="navbar-nav md:flex flex-row hidden items-center justify-between">
-            <li class="nav-item mx-5 px-1">
-                <a href="#about" class="nav-link text-textButton hover:underline hover:underline-offset-4 text-lightgreen1">About</a>
-            </li>
-            <li class="nav-item mx-5 px-1">
-                <a href="#projects" class="nav-link text-textButton hover:underline hover:underline-offset-4 text-lightgreen1">Projects</a>
-            </li>
-            <li class="nav-item mx-5 px-1">
-                <a href="#services" class="nav-link text-textButton hover:underline hover:underline-offset-4 text-lightgreen1">Services</a>
-            </li>
-        </ul>
+        <div id="menu" class="w-full hidden md:block md:w-auto items-center justify-center md:justify-between">
+            <ul class="navbar-nav flex flex-col md:flex-row items-center justify-between">
+                <li class="nav-item md:ml-12 md:pl-1">
+                    <a id="nav-link" href="#about" class="nav-link text-textButton hover:underline hover:underline-offset-4 text-lightgreen1">About</a>
+                </li>
+                <li class="nav-item md:ml-12 md:pl-1">
+                    <a id="nav-link" href="#projects" class="nav-link text-textButton hover:underline hover:underline-offset-4 text-lightgreen1">Projects</a>
+                </li>
+                <li class="nav-item md:ml-12 md:pl-1">
+                    <a id="nav-link" href="#services" class="nav-link text-textButton hover:underline hover:underline-offset-4 text-lightgreen1">Services</a>
+                </li>
+            </ul>
+        </div>
         <!-- Nav-links: End -->
     </nav>
     <!-- Navbar: End -->
 
 
     <!-- Main: Start -->
-    <main class="relative mb-32 translate-y-52">
+    <main class="relative mb-32 translate-y-24">
         <div class="container">
-            <div class="img-marley1 overflow-x-hidden absolute -top-12">
+            <div class="img-marley1 overflow-x-hidden absolute -top-10">
                 <div class="flex animate-marquee whitespace-nowrap">
-                    <img src="./img/img-marley.png" alt="">
-                    <img src="./img/img-marley.png" alt="">
-                    <img src="./img/img-marley.png" alt="">
+                    <img src="./img/img-marley.png" alt="" style="width: 2916px; height: 175px; object-fit: cover;">
+                    <img src="./img/img-marley.png" alt="" style="width: 2916px; height: 175px; object-fit: cover;">
+                    <img src="./img/img-marley.png" alt="" style="width: 2916px; height: 175px; object-fit: cover;">
                 </div>
             </div>
     
-            <div class="img-marley2 overflow-x-hidden absolute top-96 translate-y-28">
+            <div class="img-marley2 overflow-x-hidden absolute top-80 translate-y-32">
                 <div class="flex animate-marquee2 whitespace-nowrap">
-                    <img src="./img/img-marley.png" alt="">
-                    <img src="./img/img-marley.png" alt="">
-                    <img src="./img/img-marley.png" alt="">
+                    <img src="./img/img-marley.png" alt="" style="width: 2916px; height: 175px; object-fit: cover;">
+                    <img src="./img/img-marley.png" alt="" style="width: 2916px; height: 175px; object-fit: cover;">
+                    <img src="./img/img-marley.png" alt="" style="width: 2916px; height: 175px; object-fit: cover;">
                 </div>
             </div>
         </div>
         
         <!-- Hero: Start -->
-        <div id="hero" class="hero container relative flex flex-col items-center justify-center mx-auto px-11 mb-80">
-            <!-- <img class="absolute left-0 translate-x-16 translate-y-72" src="./img/signature.png" width="192" alt=""/> -->
-            <svg class="absolute animate-spin-slow" width="193" height="193" viewBox="0 0 193 193" fill="none" xmlns="http://www.w3.org/2000/svg" style="left: 90px; top: 490px;">
-                <circle cx="96.5" cy="96.5" r="96.5" fill="#9ED5C5"/>
-                <path d="M86.4135 160.774L80.6203 178.165L78.9182 177.598L76.416 162.815L65.5979 173.161L63.8959 172.594L69.6891 155.203L71.5638 155.828L67.036 169.419L76.4649 160.447L77.797 160.891L80.0439 173.725L84.5635 160.158L86.4135 160.774Z" fill="#FEFFFE"/>
-                <path d="M53.3148 143.851C53.9356 144.456 54.3793 145.118 54.6461 145.838C54.8884 146.558 54.9466 147.268 54.8209 147.968C54.6952 148.669 54.3783 149.28 53.8703 149.801C53.2292 150.459 52.5536 150.817 51.8434 150.875C51.1208 150.922 50.2898 150.644 49.3504 150.044C48.3865 149.443 47.2217 148.478 45.8561 147.147L45.2602 146.567L44.6977 147.144C43.9478 147.914 43.5709 148.624 43.5671 149.273C43.5388 149.923 43.8722 150.587 44.5675 151.264C45.1137 151.797 45.72 152.23 46.3862 152.564C47.0404 152.911 47.8038 153.171 48.6763 153.344L48.1272 154.95C47.3289 154.826 46.4977 154.536 45.6338 154.082C44.7574 153.615 44.0089 153.08 43.3881 152.475C42.2211 151.338 41.6365 150.212 41.6342 149.096C41.6195 147.969 42.1989 146.803 43.3722 145.599L48.9242 139.9L50.3395 141.279L48.8155 142.843C49.5715 142.539 50.349 142.474 51.148 142.647C51.9346 142.809 52.6568 143.21 53.3148 143.851ZM51.966 144.751C51.2211 144.025 50.3648 143.687 49.3971 143.737C48.4173 143.798 47.5403 144.227 46.7661 145.021L46.2218 145.58L46.7991 146.142C47.8047 147.122 48.6477 147.847 49.3279 148.316C49.9837 148.785 50.5444 149.017 51.0101 149.011C51.4513 149.005 51.8655 148.804 52.2525 148.406C52.7485 147.897 52.9799 147.312 52.9468 146.651C52.9012 145.977 52.5743 145.344 51.966 144.751Z" fill="#FEFFFE"/>
-                <path d="M41.0518 129.279L29.799 135.028L28.8646 133.199L30.879 132.169C29.2131 132.261 27.8336 131.409 26.7406 129.612L26.3281 128.976L27.8779 128.009L28.6201 129.119C29.2568 130.137 30.0103 130.774 30.8808 131.03C31.7358 131.294 32.6649 131.17 33.6683 130.657L40.0819 127.381L41.0518 129.279Z" fill="#FEFFFE"/>
-                <path d="M33.632 108.561C33.8915 109.817 33.7229 110.843 33.1262 111.639C32.5091 112.422 31.496 112.958 30.0871 113.249L16.2356 116.111L15.8095 114.048L29.5083 111.218C31.3246 110.843 32.0837 109.934 31.7857 108.491C31.698 108.067 31.5682 107.696 31.3962 107.377L33.1382 107.07C33.3657 107.572 33.5303 108.069 33.632 108.561Z" fill="#FEFFFE"/>
-                <path d="M32.8421 90.8641C32.6367 92.8468 31.8966 94.3559 30.6218 95.3914C29.3297 96.4251 27.6837 96.8384 25.6837 96.6312C24.3906 96.4972 23.2795 96.1207 22.3504 95.5016C21.404 94.8808 20.71 94.0944 20.2684 93.1425C19.8113 92.1716 19.6444 91.0913 19.7677 89.9017C19.9445 88.1948 20.6347 86.9158 21.8381 86.0646C23.0243 85.2116 24.5743 84.8843 26.4881 85.0826L27.2898 85.1656L26.3092 94.631C27.7473 94.7102 28.885 94.4099 29.7222 93.7299C30.5422 93.0481 31.0218 92.0348 31.1611 90.69C31.2397 89.9314 31.2027 89.1956 31.05 88.4828C30.88 87.7681 30.56 87.0728 30.0898 86.3967L31.639 85.8253C32.1145 86.4496 32.4619 87.2175 32.6811 88.129C32.8831 89.0386 32.9368 89.9503 32.8421 90.8641ZM21.3247 90.0107C21.2015 91.2004 21.4748 92.1784 22.1448 92.9448C22.8147 93.7113 23.7468 94.2174 24.9412 94.4631L25.7316 86.8339C24.4504 86.7535 23.4242 86.987 22.653 87.5344C21.8836 88.0646 21.4408 88.8901 21.3247 90.0107Z" fill="#FEFFFE"/>
-                <path d="M41.1915 74.5474L37.8015 70.4174L24.3052 69.5717L25.3368 67.5295L36.3678 68.4116L29.1231 60.0334L30.1195 58.0608L42.1879 72.5748L41.1915 74.5474Z" fill="#FEFFFE"/>
-                <path d="M64.1559 40.9073L51.6216 26.0708L53.7107 25.2737L63.9668 37.6401L63.5003 21.5386L65.1036 20.9269L75.4789 33.3869L74.9418 17.1732L76.9338 16.4132L77.4679 35.8282L75.6946 36.5048L65.4362 24.2785L65.8806 40.2493L64.1559 40.9073Z" fill="#FEFFFE"/>
-                <path d="M104.536 34.0627C102.563 33.7769 101.085 32.976 100.102 31.6602C99.122 30.3272 98.776 28.6657 99.0643 26.6758C99.2507 25.3893 99.672 24.2944 100.328 23.3911C100.987 22.4708 101.801 21.8093 102.77 21.4068C103.759 20.9895 104.845 20.8667 106.029 21.0382C107.727 21.2842 108.977 22.0258 109.778 23.2628C110.582 24.4827 110.847 26.0447 110.571 27.9488L110.455 28.7465L101.037 27.3821C100.9 28.8158 101.154 29.9647 101.799 30.8289C102.447 31.6759 103.44 32.1963 104.778 32.3901C105.533 32.4995 106.269 32.4924 106.988 32.3688C107.709 32.228 108.417 31.9365 109.111 31.4942L109.619 33.0653C108.976 33.515 108.195 33.8309 107.275 34.013C106.358 34.1778 105.445 34.1944 104.536 34.0627ZM105.856 22.5895C104.673 22.418 103.684 22.6514 102.891 23.2896C102.098 23.9278 101.555 24.8386 101.261 26.022L108.851 27.1218C108.984 25.8449 108.792 24.8101 108.277 24.0173C107.778 23.227 106.971 22.751 105.856 22.5895Z" fill="#FEFFFE"/>
-                <path d="M125.089 40.554C124.221 40.0814 123.465 39.5119 122.822 38.8455C122.178 38.1791 121.725 37.4883 121.463 36.7733L122.766 35.7952C123.074 36.5351 123.496 37.1899 124.035 37.7595C124.597 38.3223 125.22 38.7902 125.905 39.1633C126.773 39.6359 127.515 39.8326 128.13 39.7534C128.746 39.6742 129.203 39.3606 129.501 38.8126C129.733 38.3864 129.771 37.9728 129.615 37.5717C129.466 37.1554 129.117 36.7088 128.568 36.2318L126.739 34.6434C125.075 33.2043 124.662 31.716 125.5 30.1786C126.047 29.174 126.882 28.5829 128.005 28.4052C129.144 28.2357 130.36 28.5034 131.654 29.2082C132.415 29.6228 133.072 30.1384 133.624 30.755C134.2 31.3648 134.591 32.0223 134.799 32.7277L133.474 33.6934C133.256 33.0419 132.909 32.448 132.431 31.9115C131.977 31.3681 131.461 30.9389 130.883 30.6238C130.03 30.1595 129.292 29.9745 128.668 30.0689C128.044 30.1634 127.583 30.4846 127.285 31.0325C126.82 31.885 127.085 32.7397 128.079 33.5968L129.92 35.1624C130.778 35.9062 131.33 36.6508 131.575 37.3963C131.829 38.1266 131.74 38.8875 131.309 39.679C130.753 40.6988 129.911 41.2858 128.781 41.44C127.659 41.579 126.428 41.2837 125.089 40.554Z" fill="#FEFFFE"/>
-                <path d="M142.93 54.2839C141.908 53.1988 141.426 52.1175 141.483 51.0402C141.552 49.9509 142.129 48.8953 143.214 47.8732L148.041 43.3274L146.347 41.5294L147.539 40.4063L149.233 42.2043L152.053 39.5482L153.497 41.0812L150.677 43.7374L153.422 46.6521L152.23 47.7751L149.484 44.8605L144.81 49.2636C144.09 49.941 143.684 50.6094 143.591 51.2688C143.51 51.9163 143.791 52.5807 144.432 53.262C144.623 53.4639 144.838 53.642 145.079 53.7964C145.319 53.9507 145.542 54.0861 145.747 54.2026L144.823 55.5728C144.58 55.492 144.273 55.3295 143.9 55.0854C143.527 54.8412 143.204 54.5741 142.93 54.2839Z" fill="#FEFFFE"/>
-                <path d="M153.388 70.0182C152.558 68.2058 152.429 66.5299 153.002 64.9905C153.59 63.444 154.798 62.2522 156.626 61.4151C157.808 60.874 158.957 60.6341 160.072 60.6957C161.202 60.7499 162.199 61.075 163.063 61.6709C163.95 62.2752 164.642 63.1211 165.14 64.2086C165.854 65.7688 165.909 67.2211 165.305 68.5655C164.716 69.9027 163.547 70.9717 161.797 71.7726L161.065 72.1082L157.103 63.4559C155.824 64.1178 154.996 64.9543 154.62 65.9652C154.26 66.9689 154.362 68.0854 154.924 69.3147C155.242 70.0081 155.647 70.6231 156.141 71.1597C156.65 71.6891 157.279 72.1257 158.027 72.4693L156.983 73.7482C156.256 73.4518 155.567 72.9667 154.915 72.2928C154.279 71.6117 153.77 70.8535 153.388 70.0182ZM163.743 64.9053C163.245 63.8178 162.513 63.114 161.547 62.7939C160.581 62.4738 159.521 62.5111 158.367 62.9059L161.56 69.8797C162.705 69.2985 163.47 68.5763 163.856 67.713C164.25 66.8656 164.212 65.9297 163.743 64.9053Z" fill="#FEFFFE"/>
-                <path d="M158.854 86.4725L171.423 85.1704L171.635 87.2134L169.385 87.4465C170.972 87.9618 171.951 89.2544 172.322 91.3245L172.477 92.0664L170.683 92.4092L170.391 91.1063C170.164 89.9274 169.691 89.0615 168.972 88.5087C168.27 87.9541 167.358 87.7349 166.238 87.851L159.074 88.5931L158.854 86.4725Z" fill="#FEFFFE"/>
-                <path d="M158.569 108.516L172.094 106.01L171.588 108.241L160.672 110.059L169.726 116.457L169.249 118.561L158.132 110.443L158.569 108.516Z" fill="#FEFFFE"/>
-                <path d="M149.019 131.586C150.124 129.927 151.481 128.936 153.091 128.613C154.716 128.299 156.365 128.7 158.039 129.814C159.121 130.534 159.929 131.385 160.463 132.365C161.012 133.355 161.26 134.374 161.208 135.422C161.161 136.494 160.805 137.528 160.143 138.524C159.192 139.952 157.986 140.763 156.524 140.956C155.077 141.159 153.553 140.727 151.952 139.661L151.281 139.214L156.554 131.293C155.318 130.553 154.172 130.29 153.114 130.502C152.071 130.724 151.175 131.397 150.426 132.523C150.003 133.158 149.693 133.826 149.497 134.528C149.314 135.24 149.274 136.004 149.375 136.821L147.738 136.606C147.608 135.832 147.658 134.991 147.888 134.082C148.133 133.183 148.51 132.351 149.019 131.586ZM158.815 137.702C159.478 136.707 159.691 135.714 159.455 134.724C159.219 133.734 158.63 132.852 157.687 132.078L153.436 138.463C154.533 139.13 155.55 139.401 156.487 139.276C157.415 139.165 158.191 138.64 158.815 137.702Z" fill="#FEFFFE"/>
-                <path d="M134.736 147.054C135.736 146.251 136.726 145.934 137.707 146.103C138.684 146.296 139.623 146.953 140.524 148.075L149.379 159.104L147.737 160.423L138.979 149.515C137.818 148.069 136.663 147.807 135.514 148.729C135.177 149.001 134.905 149.285 134.7 149.584L133.633 148.172C133.977 147.741 134.344 147.368 134.736 147.054Z" fill="#FEFFFE"/>
-                <path d="M120.008 155.556C121.377 154.964 122.558 154.879 123.551 155.299C124.552 155.735 125.348 156.638 125.939 158.006L128.569 164.092L130.836 163.112L131.486 164.616L129.219 165.596L130.755 169.152L128.822 169.987L127.285 166.431L123.61 168.019L122.96 166.516L126.636 164.928L124.088 159.032C123.696 158.125 123.206 157.516 122.618 157.203C122.037 156.907 121.317 156.945 120.457 157.316C120.203 157.426 119.962 157.568 119.735 157.741C119.508 157.915 119.305 158.078 119.125 158.231L118.152 156.896C118.31 156.695 118.568 156.461 118.925 156.194C119.281 155.926 119.642 155.714 120.008 155.556Z" fill="#FEFFFE"/>
-                <path d="M107.85 159.423L108.268 162.042L105.65 162.46L105.231 159.842L107.85 159.423Z" fill="#FEFFFE"/>
-                <path d="M81 114.12C83.132 103.913 84.9823 93.7162 86.349 83.3753C86.8497 79.5871 86.946 75.2438 88.1824 71.582C88.2877 71.2701 88.5102 70.5753 88.7647 70.7842C90.2172 71.9769 89.781 74.4091 90.102 76.2605C90.9809 81.3309 91.6439 86.4371 92.4098 91.5249C92.6792 93.3143 92.8056 97.6186 93.9412 99.3728C94.0162 99.4887 94.2187 99.2442 94.2647 99.114C94.9358 97.2135 95.0936 95.1686 95.451 93.1851C96.3647 88.1133 97.1816 83.0304 97.9961 77.9422C98.3676 75.6209 98.5022 72.4048 99.5706 70.2021C100.077 69.159 100.232 72.4359 100.369 73.587C101.503 83.1153 102.618 92.6299 103.949 102.132C103.977 102.331 105.25 108.766 103.431 108.6C100.675 108.35 99.0386 97.329 98.5569 95.492C97.5277 91.5679 96.6108 87.6168 95.6451 83.6771C95.2863 82.2134 94.4792 77.8705 94.2863 79.3651C93.712 83.8141 94.3211 89.2391 94.5235 93.5947C94.8447 100.507 95.3033 107.422 96.7451 114.206C96.8496 114.698 97.6481 119.396 98.6431 119.919C99.7903 120.523 99.8067 117.579 100.11 116.319C101.868 109.009 102.429 101.37 104.294 94.1121C104.483 93.3783 105.717 94.8509 106.084 95.5135C107.904 98.7941 109.319 102.267 110.98 105.625C111.364 106.4 111.735 107.188 112.21 107.911C112.861 108.901 113.093 108.922 113.331 107.824C113.857 105.402 113.628 102.645 113.698 100.192C113.85 94.8728 114 89.5594 114 84.2377" stroke="#FEFFFE" stroke-width="3" stroke-linecap="round"/>
-            </svg>                               
+        <div id="hero" class="hero container relative flex flex-row items-center justify-end mx-auto px-5 md:px-11 mb-52 md:mb-40">
+            <img class="absolute -left-12 top-550px md:left-28 md:top-468px z-50 animate-spin-slow" src="./img/signature.png" width="193" height="193" alt=""/>
 
-            <figure class="left self-start pl-20">
+            <figure class="absolute -left-40 top-44 md:left-0 md:top-0 md:self-start md:pl-20">
                 <img class="" src="./img/user.png" width="824" alt=""/>
             </figure>
 
-            <div class="right absolute flex flex-col items-end self-end pr-20 top-24">
-                <h1 class="text-headlineSemibold1 text-right mb-11 pl-96 text-lightgreen1">
+            <div class="right flex flex-col items-end self-end pt-12 md:pt-24">
+                <h1 class="text-headlineSemibold2 md:text-headlineSemibold1 text-right mb-11 md:pl-96 text-lightgreen1">
                     Hi, I am Marley a <br/> <span class="text-green3">Professional UI/UX <br/> Designer</span>
                 </h1>
-
-                <a class="border-default border-green3 text-textButton text-green3 px-11 py-6 rounded-full hover:bg-lightgreen1 hover:text-green3 ease-in-out duration-300" href="">Hire Me</a>
+                <a class="border-default border-green3 text-textButton text-green3 px-11 py-6 rounded-100 hover:bg-lightgreen1 hover:text-green3 ease-in-out duration-300" href="">Hire Me</a>
             </div>
         </div>
         <!-- Hero: End -->
 
 
         <!-- About: Start -->
-        <div id="about" class="about container flex flex-col items-center justify-center mx-auto px-11 mb-96">
-            <h1 class="text-headlineSemibold1 text-green3 font-medium mb-11 pl-60">Marley Westervelt</h1>
-            <p class="text-center text-subtitle1 px-36 text-lightgreen1">
+        <div id="about" class="about container flex flex-col items-center justify-center mx-auto px-5 md:px-11 pt-72 md:pt-40 mb-96">
+            <h1 class="text-headlineSemibold2 text-center md:text-headlineSemibold1 text-green3 mb-11 px-10 md:pl-60">Marley Westervelt</h1>
+            <p class="text-center text-subtitle1 px-5 md:px-36 text-lightgreen1">
                 Hi, I’m Marley Westervelt, a professional UI/UX Designer for more than 6 years, and I’m from Indonesia. I’ve worked for an Australian company as a Web Designer for 3 years, I’ve been freelancing for the last 9 years, and I am looking forward to collaborating with you!
             </p>
         </div>
@@ -111,15 +99,13 @@
 
 
         <!-- Project View: Start -->
-        <div id="projects" class="relative project-view container mx-auto px-11 mb-80">
-            <div class="absolute rotate-90 translate-y-96 -translate-x-20 top-96">
-                <img src="./img/img-portfolio.png" alt="" style="max-width: 3094px; max-height: 175px;">
-            </div>
+        <div id="projects" class="relative project-view container mx-auto px-5 md:px-11 mb-80">
+            <img src="./img/img-portfolio.png" alt="" class="absolute max-w-3094px max-h-175px rotate-90 translate-y-96 md:translate-y-96 top-96 md:top-96 -translate-x-468px -left-96 md:left-0 md:-translate-x-20 -z-50" />
 
             <figure class="flex flex-col">
                 <!-- Card Left 1: Start -->
                 <div class="card-item flex flex-col relative">
-                    <a href="#" class="card-right flex flex-row items-center justify-between shadow-2xl hover:shadow-gray1 absolute bg-green4 rounded-3xl mx-auto px-8 py-12 right-0 -translate-x-10 top-64 ease-in-out duration-300" style="min-width: 590px;">
+                    <a href="#" class="card-right hidden md:flex flex-row items-center justify-between shadow-2xl hover:shadow-gray1 absolute bg-green4 rounded-50 mx-auto px-8 py-12 right-0 -translate-x-10 top-64 ease-in-out duration-300" style="min-width: 590px;">
                         <div class="pr-5 text-left">
                             <h3 class="text-headlineSemibold2 text-lightgreen1">Mobile App UI Design</h3>
                             <p class="text-subtitle1 text-lightgreen1">Lorem ipsum dolor sit amet consectetur. <br/> Gravida nulla lorem sapien id.</p>
@@ -128,13 +114,13 @@
                             <path d="M18.75 36L16.6 33.85L26.5 23.95L16.6 14.05L18.75 11.9L30.8 23.95L18.75 36Z" fill="#FEFFFE"/>
                         </svg>                            
                     </a>
-                    <img class="mb-16 text-left" src="./img/img-project-view/project-view1.png" width="924" alt="" style="border-radius: 100px;">
+                    <img class="rounded-50 md:rounded-100 mb-16 text-left" src="./img/img-project-view/project-view1.png" width="924" alt="">
                 </div>
                 <!-- Card Left 1: End -->
 
                 <!-- Card Right 1: Start -->
                 <div class="card-item flex flex-col relative">
-                    <a href="#" class="card-right flex flex-row items-center justify-between shadow-2xl hover:shadow-gray1 absolute bg-green4 rounded-3xl mx-auto px-8 py-12 left-0 translate-x-10 top-64 ease-in-out duration-300" style="min-width: 590px;">
+                    <a href="#" class="card-right hidden md:flex flex-row items-center justify-between shadow-2xl hover:shadow-gray1 absolute bg-green4 rounded-50 mx-auto px-8 py-12 left-0 translate-x-10 top-64 ease-in-out duration-300" style="min-width: 590px;">
                         <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M29.25 36L31.4 33.85L21.5 23.95L31.4 14.05L29.25 11.9L17.2 23.95L29.25 36Z" fill="#FEFFFE"/>
                         </svg>                            
@@ -143,13 +129,13 @@
                             <p class="text-subtitle1 text-lightgreen1">Lorem ipsum dolor sit amet consectetur. <br> Gravida nulla lorem sapien id.</p>
                         </div>
                     </a>
-                    <img class="mb-16 self-end text-right" src="./img/img-project-view/project-view2.png" width="924" alt="" style="border-radius: 100px;">
+                    <img class="rounded-50 md:rounded-100 mb-16 self-end text-right" src="./img/img-project-view/project-view2.png" width="924" alt="">
                 </div>
                 <!-- Card Right 1: End -->
 
                 <!-- Card Left 2: Start -->
                 <div class="card-item flex flex-col relative">
-                    <a href="#" class="card-right flex flex-row items-center justify-between shadow-2xl hover:shadow-gray1 absolute bg-green4 rounded-3xl mx-auto px-8 py-12 right-0 -translate-x-10 top-64 ease-in-out duration-300" style="min-width: 590px;">
+                    <a href="#" class="card-right hidden md:flex flex-row items-center justify-between shadow-2xl hover:shadow-gray1 absolute bg-green4 rounded-50 mx-auto px-8 py-12 right-0 -translate-x-10 top-64 ease-in-out duration-300" style="min-width: 590px;">
                         <div class="pr-5 text-left">
                             <h3 class="text-headlineSemibold2 text-lightgreen1">Web UI Design</h3>
                             <p class="text-subtitle1 text-lightgreen1">Lorem ipsum dolor sit amet consectetur. <br/> Gravida nulla lorem sapien id.</p>
@@ -158,13 +144,13 @@
                             <path d="M18.75 36L16.6 33.85L26.5 23.95L16.6 14.05L18.75 11.9L30.8 23.95L18.75 36Z" fill="#FEFFFE"/>
                         </svg>                            
                     </a>
-                    <img class="mb-16 text-left" src="./img/img-project-view/project-view3.png" width="924" alt="" style="border-radius: 100px;">
+                    <img class="rounded-50 md:rounded-100 mb-16 text-left" src="./img/img-project-view/project-view3.png" width="924" alt="">
                 </div>
                 <!-- Card Left 2: End -->
 
                 <!-- Card Right 2: Start -->
                 <div class="card-item flex flex-col relative">
-                    <a href="#" class="card-right flex flex-row items-center justify-between shadow-2xl hover:shadow-gray1 absolute bg-green4 rounded-3xl mx-auto px-8 py-12 left-0 translate-x-10 top-64 ease-in-out duration-300" style="min-width: 590px;">
+                    <a href="#" class="card-right hidden md:flex flex-row items-center justify-between shadow-2xl hover:shadow-gray1 absolute bg-green4 rounded-50 mx-auto px-8 py-12 left-0 translate-x-10 top-64 ease-in-out duration-300" style="min-width: 590px;">
                         <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M29.25 36L31.4 33.85L21.5 23.95L31.4 14.05L29.25 11.9L17.2 23.95L29.25 36Z" fill="#FEFFFE"/>
                         </svg>                            
@@ -173,7 +159,7 @@
                             <p class="text-subtitle1 text-lightgreen1">Lorem ipsum dolor sit amet consectetur. <br> Gravida nulla lorem sapien id.</p>
                         </div>
                     </a>
-                    <img class="mb-16 self-end text-right" src="./img/img-project-view/project-view4.png" width="924" alt="" style="border-radius: 100px;">
+                    <img class="rounded-50 md:rounded-100 mb-16 self-end text-right" src="./img/img-project-view/project-view4.png" width="924" alt="">
                 </div>
                 <!-- Card Right 2: End -->
             </figure>
@@ -182,38 +168,35 @@
 
 
         <!-- Services: Start -->
-        <div id="services" class="card-service container flex flex-col selt-center mx-auto px-11 py-5 bg-green4">
-            <!-- <figure class="signature absolute right-0 -translate-x-52">
-                <img src="/img/signature.png" alt="" width="193"/>
-            </figure> -->
+        <div id="services" class="card-service container flex flex-col selt-center mx-auto px-5 md:px-11 py-5 bg-green4">
             <h1 class="text-headlineSemibold1 text-lightgreen1 mb-32">Services</h1>
             
             <div class="flex flex-col selt-center justify-center mb-52">
                 <!-- Card Service 1: Start -->
-                <div class="card-item grid grid-cols-5 grid-flow-row gap-1 items-center justify-center mb-28 pb-32 border-b-0.6">
-                    <div class="flex flex-row items-start col-span-2">
+                <div class="card-item flex flex-col justify-start md:grid md:grid-cols-5 md:grid-flow-row md:gap-1 items-start md:justify-center mb-28 pb-12 md:pb-32 border-b-0.6">
+                    <div class="flex flex-row items-start md:col-span-2 mb-8 md:mb-0">
                         <h1 class="text-headlineSemibold1 text-lightgreen1 mr-10">01/</h1>
                         <h1 class="text-headline2 text-lightgreen1">Web UI/UX <br> Design</h1>
                     </div>
-                    <p class="text-subtitle1 text-lightgreen1 text-left col-span-2" style="width: 468px; height: 105px;">
+                    <p class="text-justify text-subtitle1 text-lightgreen1 md:text-left md:col-span-2 mb-8 md:mb-0">
                         Meeting and discussing the structure of the business. User Experience UX Research. Development of the design of the first 3 blocks or the entire main page (edits or approval). It was rendering the whole site in Figma (+ mobile version) and collecting a website prototype to demonstrate its work and work out user behavior scenarios. Site testing and transferring the project to the developers.
                     </p>
-                    <a class="self-start justify-self-end border-default border-lightgreen1 text-textButton text-lightgreen1 px-11 py-6 rounded-full hover:bg-lightgreen1 hover:text-green3 ease-in-out duration-300" href="">
+                    <a class="self-start justify-self-end border-default border-lightgreen1 text-textButton text-lightgreen1 px-11 py-6 rounded-100 hover:bg-lightgreen1 hover:text-green3 ease-in-out duration-300" href="">
                         <button>Start a Project</button>
                     </a>
                 </div>
                 <!-- Card Service 1: End -->
 
                 <!-- Card Service 2: Start -->
-                <div class="card-item grid grid-cols-5 grid-flow-row gap-1 items-center justify-center pb-32 border-b-0.6">
-                    <div class="flex flex-row items-start col-span-2">
+                <div class="card-item flex flex-col justify-start md:grid md:grid-cols-5 md:grid-flow-row md:gap-1 items-start md:justify-center pb-12 md:pb-32 border-b-0.6">
+                    <div class="flex flex-row items-start col-span-2 mb-8 md:mb-0">
                         <h1 class="text-headlineSemibold1 text-lightgreen1 mr-10">02/</h1>
                         <h1 class="text-headline2 text-lightgreen1">Mobile App UI/UX <br> Design</h1>
                     </div>
-                    <p class="text-subtitle1 text-lightgreen1 text-left col-span-2" style="width: 468px; height: 105px;">
+                    <p class="text-justify text-subtitle1 text-lightgreen1 md:text-left col-span-2 mb-8 md:mb-0">
                         We are meeting and discussing the project and its tasks. UX user experience research. Development of a wireframe prototype and defining the structure. UI design of the entire application (drawing illustrations and icons). Gathering the application prototype. Focus group testing. Making changes based on the results of research and focus group testing. Transfer of the project to developers.
                     </p>
-                    <a class="self-start justify-self-end border-default border-lightgreen1 text-textButton text-lightgreen1 px-11 py-6 rounded-full hover:bg-lightgreen1 hover:text-green3 ease-in-out duration-300" href="">
+                    <a class="self-start justify-self-end border-default border-lightgreen1 text-textButton text-lightgreen1 px-11 py-6 rounded-100 hover:bg-lightgreen1 hover:text-green3 ease-in-out duration-300" href="">
                         <button>Start a Project</button>
                     </a>
                 </div>
@@ -225,8 +208,8 @@
 
         <!-- Footer: Start -->
         <footer class="footer flex flex-col items-center justify-between bg-black1 w-full" style="height: 620px;">
-            <div class="container mx-auto px-36 flex flex-row items-start justify-between">
-                <div class="left-item flex flex-col items-start justify-between">
+            <div class="container mx-auto px-5 md:px-36 flex flex-col items-center justify-center md:flex-row md:items-start md:justify-between">
+                <div class="left-item flex flex-col items-center md:items-start justify-center md:justify-between">
                     <h1 class="text-headlineSemibold1 text-green3 my-11">HIRE ME</h1>
 
                     <!-- Footer Brand: Start -->
@@ -236,22 +219,22 @@
                     <!-- Footer Brand: End -->
 
                     <!-- Footer Links: Start -->
-                    <ul class="navbar-nav md:flex flex-col hidden items-start justify-between">
-                        <li class="nav-item my-3 py-1">
+                    <ul class="navbar-nav flex flex-row md:flex-col items-center md:items-start justify-between">
+                        <li class="nav-item mx-2 px-1 md:mx-0 md:px-0 my-3 py-1">
                             <a href="#" class="nav-link text-textButton hover:underline hover:underline-offset-4 text-lightgreen1">Projects</a>
                         </li>
-                        <li class="nav-item my-3 py-1">
+                        <li class="nav-item mx-2 px-1 md:mx-0 md:px-0 my-3 py-1">
                             <a href="#" class="nav-link text-textButton hover:underline hover:underline-offset-4 text-lightgreen1">About</a>
                         </li>
-                        <li class="nav-item my-3 py-1">
+                        <li class="nav-item mx-2 px-1 md:mx-0 md:px-0 my-3 py-1">
                             <a href="#" class="nav-link text-textButton hover:underline hover:underline-offset-4 text-lightgreen1">Services</a>
                         </li>
                     </ul>
                     <!-- Footer Links: End -->
                 </div>
 
-                <div class="right-item flex flex-col items-start justify-between">
-                    <button class="text-headline3 text-lightgreen1 my-11 px-16 py-6 rounded-full bg-green3 hover:bg-lightgreen1 hover:text-green3 ease-in-out duration-300 cursor-pointer">Write a Message</button>
+                <div class="right-item flex flex-col items-center md:items-start justify-center md:justify-between">
+                    <button class="text-headline3 text-lightgreen1 my-11 px-16 py-6 rounded-100 bg-green3 hover:bg-lightgreen1 hover:text-green3 ease-in-out duration-300 cursor-pointer">Write a Message</button>
 
                     <ul class="media-social">
                         <li class="dribbble my-6 py-1">
@@ -295,13 +278,13 @@
                                     </defs>
                                 </svg>
                                 <p class="text-textButton text-lightgreen1 pl-3">BEHANCE</p> 
-                            </a>                                                                                                              
+                            </a>
                         </li>
                     </ul>
                 </div>
             </div>
 
-            <div class="copyright container mx-auto px-11 py-11">
+            <div class="copyright container mx-auto px-5 md:px-11 py-11">
                 <p class="text-subtitle1 text-lightgreen1 text-center">Copyright <script>document.write(new Date().getFullYear())</script> - Malley Westervelt</p>
             </div>
         </footer>
@@ -313,7 +296,7 @@
 
 
     <!-- Script: Start -->
-    <!-- <script src="./script.js"></script> -->
+    <script type="module" src="./scripts/app.js"></script>
     <!-- Script: End -->
 </body>
 </html>

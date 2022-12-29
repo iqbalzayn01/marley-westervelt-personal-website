@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./*.{html,js}", "./pages/*.html"],
+  content: ["./*.{html,js}", "./pages/*.html","./scripts/*.js"],
   theme: {
     fontFamily: {
       'nunitoSans': ['Nunito Sans', 'sans-serif'],
@@ -56,13 +56,31 @@ module.exports = {
       '0': '0px',
       '0.6': '0.6px',
     },
+    borderRadius: {
+      DEFAULT: '0.25rem',
+      DEFAULT: '4px',
+      '50': '50px',
+      '100': '100px',
+    },
     screens: {
       sm: "480px",
       md: "768px",
       lg: "1366px",
       xl: "1440px",
     },
+    maxWidth: {
+      '1345px': '1345px',
+      '3094px': '3094px',
+    },
+    maxHeight: {
+      '75px': '75px',
+      '175px': '175px',
+    },
     extend: {
+      spacing: {
+        '468px': '468px',
+        '550px': '550px',
+      },
       colors: {
         lightgreen1: "#FEFFFE",
         lightgreen2: "#BCEAD5",
