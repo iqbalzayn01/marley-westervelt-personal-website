@@ -26,6 +26,14 @@ module.exports = {
         letterSpacing: '1.25px',
         fontWeight: '600',
       }],
+      portfolioTitle: ['20px', {
+        letterSpacing: '-0.5px',
+        fontWeight: '400',
+      }],
+      portfolioSubtitle: ['24px', {
+        letterSpacing: '-0.5px',
+        fontWeight: '700',
+      }],
       headline1: ['66px', {
         letterSpacing: '-0.5px',
         fontWeight: '300',
@@ -52,7 +60,7 @@ module.exports = {
       }],
     },
     borderWidth: {
-      default: '1px',
+      default: '1.5px',
       '0': '0px',
       '0.6': '0.6px',
     },
@@ -69,17 +77,30 @@ module.exports = {
       xl: "1440px",
     },
     maxWidth: {
+      'full': '100%',
+      '432px': '432px',
       '1345px': '1345px',
       '3094px': '3094px',
     },
     maxHeight: {
       '75px': '75px',
       '175px': '175px',
+      '755px': '755px',
     },
     extend: {
       spacing: {
+        '75px': '75px',
+        '85px': '85px',
+        '114px': '114px',
+        '120px': '120px',
+        '125px': '125px',
+        '217px': '217px',
+        '225px': '225px',
+        '432px': '432px',
         '468px': '468px',
         '550px': '550px',
+        '755px': '755px',
+        '924px': '924px',
       },
       colors: {
         lightgreen1: "#FEFFFE",

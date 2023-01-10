@@ -16,12 +16,32 @@
 </head>
 <body class="bg-black1 font-nunitoSans relative">
     <!-- Navbar: Start -->
-    <nav id="navbar" class="fixed flex flex-row justify-between items-center w-full z-50 mx-auto pt-3 pb-5 px-5 md:px-11">
+    <nav id="navbar" class="fixed flex flex-row justify-between items-center w-full z-50 mx-auto px-5 md:px-11">
+        <!-- Nav-links: Start -->
+        <div id="menu" class="w-full hidden md:block md:w-auto items-center justify-center md:justify-between">
+            <ul class="navbar-nav flex flex-col md:flex-row items-center justify-between">
+                <li class="nav-item mb-10 md:mb-0 md:mr-3 md:pr-1">
+                    <a id="nav-link" href="#projects" class="nav-link text-textButton hover:underline hover:underline-offset-4 text-lightgreen1">Projects</a>
+                </li>
+                <li class="nav-item mb-10 md:mb-0">
+                    <a id="nav-link" href="#services" class="nav-link text-textButton hover:underline hover:underline-offset-4 text-lightgreen1">Services</a>
+                </li>
+                <!-- Button Hire Me Mobile: Start -->
+                <a class="block mb-10 md:mb-0 md:hidden border-default border-green3 text-textButton text-green3 px-11 py-4 rounded-100 hover:bg-lightgreen1 hover:text-green3 ease-in-out duration-300" href="">Hire Me</a>
+                <!-- Button Hire Me Mobile: End -->
+            </ul>
+        </div>
+        <!-- Nav-links: End -->
+
         <!-- Nav Brand: Start -->
         <a id="nav-brand" href="#hero" class="navbar-brand z-50">
             <h1 class="md:text-headline2 text-xl text-green3">Marley Westervelt</h1>
         </a>
         <!-- Nav Brand: Start -->
+
+        <!-- Button Hire Me Desktop: Start -->
+        <a class="hidden md:block border-default border-green3 text-textButton text-green3 px-11 py-4 rounded-100 hover:bg-lightgreen1 hover:text-green3 ease-in-out duration-300" href="">Hire Me</a>
+        <!-- Button Hire Me Desktop: End -->
 
         <!-- Button Toggle: Start -->
         <button id="menu-toggler" class="block md:hidden" type="button" class="">
@@ -30,146 +50,92 @@
             </svg>                
         </button>
         <!-- Button Toggle: End -->
-
-        <!-- Nav-links: Start -->
-        <div id="menu" class="w-full hidden md:block md:w-auto items-center justify-center md:justify-between">
-            <ul class="navbar-nav flex flex-col md:flex-row items-center justify-between">
-                <li class="nav-item md:ml-12 md:pl-1">
-                    <a id="nav-link" href="#about" class="nav-link text-textButton hover:underline hover:underline-offset-4 text-lightgreen1">About</a>
-                </li>
-                <li class="nav-item md:ml-12 md:pl-1">
-                    <a id="nav-link" href="#projects" class="nav-link text-textButton hover:underline hover:underline-offset-4 text-lightgreen1">Projects</a>
-                </li>
-                <li class="nav-item md:ml-12 md:pl-1">
-                    <a id="nav-link" href="#services" class="nav-link text-textButton hover:underline hover:underline-offset-4 text-lightgreen1">Services</a>
-                </li>
-            </ul>
-        </div>
-        <!-- Nav-links: End -->
     </nav>
+    <div id="trigger" class="relative w-full my-8 py-8"></div>
     <!-- Navbar: End -->
 
 
     <!-- Main: Start -->
-    <main class="relative mb-32 translate-y-24">
-        <div class="container">
-            <div class="img-marley1 overflow-x-hidden absolute -top-10">
-                <div class="flex animate-marquee whitespace-nowrap">
-                    <img src="./img/img-marley.png" alt="" style="width: 2916px; height: 175px; object-fit: cover;">
-                    <img src="./img/img-marley.png" alt="" style="width: 2916px; height: 175px; object-fit: cover;">
-                    <img src="./img/img-marley.png" alt="" style="width: 2916px; height: 175px; object-fit: cover;">
-                </div>
-            </div>
-    
-            <div class="img-marley2 overflow-x-hidden absolute top-80 translate-y-32">
-                <div class="flex animate-marquee2 whitespace-nowrap">
-                    <img src="./img/img-marley.png" alt="" style="width: 2916px; height: 175px; object-fit: cover;">
-                    <img src="./img/img-marley.png" alt="" style="width: 2916px; height: 175px; object-fit: cover;">
-                    <img src="./img/img-marley.png" alt="" style="width: 2916px; height: 175px; object-fit: cover;">
-                </div>
-            </div>
-        </div>
-        
+    <main class="relative">
         <!-- Hero: Start -->
-        <div id="hero" class="hero container relative flex flex-row items-center justify-end mx-auto px-5 md:px-11 mb-52 md:mb-40">
-            <img class="absolute -left-12 top-550px md:left-28 md:top-468px z-50 animate-spin-slow" src="./img/signature.png" width="193" height="193" alt=""/>
-
-            <figure class="absolute -left-40 top-44 md:left-0 md:top-0 md:self-start md:pl-20">
-                <img class="" src="./img/user.png" width="824" alt=""/>
-            </figure>
-
-            <div class="right flex flex-col items-end self-end pt-12 md:pt-24">
-                <h1 class="text-headlineSemibold2 md:text-headlineSemibold1 text-right mb-11 md:pl-96 text-lightgreen1">
-                    Hi, I am Marley a <br/> <span class="text-green3">Professional UI/UX <br/> Designer</span>
-                </h1>
-                <a class="border-default border-green3 text-textButton text-green3 px-11 py-6 rounded-100 hover:bg-lightgreen1 hover:text-green3 ease-in-out duration-300" href="">Hire Me</a>
+        <div id="hero" class="hero container relative mx-auto px-5 md:px-11 mb-52 md:mb-125px">
+            <div class="flex flex-col md:flex-row items-center md:items-start justify-center md:px-20 pb-125px border-b-0.6 border-gray1">
+                <figure class="relative">
+                    <img class="w-225px max-w-full md:w-auto md:max-w-432px" src="./img/user.png" alt=""/>
+    
+                    <!-- Img: Start -->
+                    <img class="absolute -left-12 bottom-0 md:-left-20 md:top-468px z-10 animate-spin-slow w-114px md:w-217px" src="./img/icons/signature.svg" alt=""/>
+                    <img class="absolute hover:animate-bounce w-75px md:w-120px top-10 -left-10 md:top-20 md:-left-12" src="./img/icons/figma.svg" alt="">
+                    <img class="absolute hover:animate-bounce w-75px md:w-120px top-40 -right-11 md:top-72 md:-right-14 float-right" src="./img/icons/adobe-xd.svg" alt="">
+                    <img class="absolute hover:animate-bounce w-75px md:w-120px -bottom-5 right-0 md:bottom-0 md:right-0" src="./img/icons/sketch.svg" alt="">
+                    <!-- Img: Start --> 
+                </figure>
+                <div class="flex flex-col items-center justify-center md:items-end">
+                    <h1 class="text-headlineSemibold2 md:text-headlineSemibold1 text-center md:text-right pt-11 mb-11 text-lightgreen1">
+                        Hi, I am Marley a <br/> <span class="text-green3">Professional UI/UX <br/> Designer</span>
+                    </h1>
+                    <p class="text-center md:text-right text-subtitle1 mb-11 md:pl-48 text-lightgreen1">
+                        Hi, I’m Marley Westervelt, a professional UI/UX Designer for more than 6 years, and I’m from Indonesia. I’ve worked for an Australian company as a Web Designer for 3 years, I’ve been freelancing for the last 9 years, and I am looking forward to collaborating with you!
+                    </p>
+                    <div class="grid grid-rows-4 md:grid-rows-2 grid-cols-5 grid-flow-col md:grid-flow-row gap-4">
+                        <div class="text-textButton text-lightgreen1 text-center col-span-5 md:col-span-3 px-11 py-3 border-default rounded-100">MANAGEMENT FREAK</div>
+                        <div class="text-textButton text-lightgreen1 text-center col-span-5 md:col-span-2 px-11 py-3 border-default rounded-100">COLLABORATIVE</div>
+                        <div class="text-textButton text-lightgreen1 text-center col-span-5 md:col-span-2 px-11 py-3 border-default rounded-100">COMMUNICATIVE</div>
+                        <div class="text-textButton text-lightgreen1 text-center col-span-5 md:col-span-3 px-11 py-3 border-default rounded-100">CLIENT’S FAVORITE</div>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- Hero: End -->
 
 
-        <!-- About: Start -->
-        <div id="about" class="about container flex flex-col items-center justify-center mx-auto px-5 md:px-11 pt-72 md:pt-40 mb-96">
-            <h1 class="text-headlineSemibold2 text-center md:text-headlineSemibold1 text-green3 mb-11 px-10 md:pl-60">Marley Westervelt</h1>
-            <p class="text-center text-subtitle1 px-5 md:px-36 text-lightgreen1">
-                Hi, I’m Marley Westervelt, a professional UI/UX Designer for more than 6 years, and I’m from Indonesia. I’ve worked for an Australian company as a Web Designer for 3 years, I’ve been freelancing for the last 9 years, and I am looking forward to collaborating with you!
-            </p>
-        </div>
-        <!-- About: End -->
-
-
         <!-- Project View: Start -->
-        <div id="projects" class="relative project-view container mx-auto px-5 md:px-11 mb-80">
-            <img src="./img/img-portfolio.png" alt="" class="absolute max-w-3094px max-h-175px rotate-90 translate-y-96 md:translate-y-96 top-96 md:top-96 -translate-x-468px -left-96 md:left-0 md:-translate-x-20 -z-50" />
-
-            <figure class="flex flex-col">
-                <!-- Card Left 1: Start -->
+        <div id="projects" class="relative project-view container mx-auto px-5 md:px-11 mb-125px">
+            <figure class="flex flex-col items-center pb-125px border-b-0.6 border-gray1">
+                <!-- Card 1: Start -->
                 <div class="card-item flex flex-col relative">
-                    <a href="#" class="card-right hidden md:flex flex-row items-center justify-between shadow-2xl hover:shadow-gray1 absolute bg-green4 rounded-50 mx-auto px-8 py-12 right-0 -translate-x-10 top-64 ease-in-out duration-300" style="min-width: 590px;">
-                        <div class="pr-5 text-left">
-                            <h3 class="text-headlineSemibold2 text-lightgreen1">Mobile App UI Design</h3>
-                            <p class="text-subtitle1 text-lightgreen1">Lorem ipsum dolor sit amet consectetur. <br/> Gravida nulla lorem sapien id.</p>
-                        </div>
-                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M18.75 36L16.6 33.85L26.5 23.95L16.6 14.05L18.75 11.9L30.8 23.95L18.75 36Z" fill="#FEFFFE"/>
-                        </svg>                            
-                    </a>
-                    <img class="rounded-50 md:rounded-100 mb-16 text-left" src="./img/img-project-view/project-view1.png" width="924" alt="">
+                    <div class="flex flex-col mb-auto pb-3">
+                        <h3 class="text-portfolioTitle text-lightgreen2">Mobile App Design</h3>
+                        <h1 class="text-portfolioSubtitle text-lightgreen1">Travel App - Redesign Challenge</h1>
+                    </div>
+                    <img class="rounded-50 md:rounded-100 mb-16 w-full md:w-924px" src="./img/img-project-view/project-view1.png" alt="">
                 </div>
-                <!-- Card Left 1: End -->
-
-                <!-- Card Right 1: Start -->
+                <!-- Card 1: End -->
+                <!-- Card 1: Start -->
                 <div class="card-item flex flex-col relative">
-                    <a href="#" class="card-right hidden md:flex flex-row items-center justify-between shadow-2xl hover:shadow-gray1 absolute bg-green4 rounded-50 mx-auto px-8 py-12 left-0 translate-x-10 top-64 ease-in-out duration-300" style="min-width: 590px;">
-                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M29.25 36L31.4 33.85L21.5 23.95L31.4 14.05L29.25 11.9L17.2 23.95L29.25 36Z" fill="#FEFFFE"/>
-                        </svg>                            
-                        <div class="pl-5 text-right">
-                            <h3 class="text-headlineSemibold2 text-lightgreen1">UX Design</h3>
-                            <p class="text-subtitle1 text-lightgreen1">Lorem ipsum dolor sit amet consectetur. <br> Gravida nulla lorem sapien id.</p>
-                        </div>
-                    </a>
-                    <img class="rounded-50 md:rounded-100 mb-16 self-end text-right" src="./img/img-project-view/project-view2.png" width="924" alt="">
+                    <div class="flex flex-col mb-auto pb-3">
+                        <h3 class="text-portfolioTitle text-lightgreen2">UI Design</h3>
+                        <h1 class="text-portfolioSubtitle text-lightgreen1">SuperGoat - Landing Page</h1>
+                    </div>
+                    <img class="rounded-50 md:rounded-100 mb-16 w-full md:w-924px" src="./img/img-project-view/project-view2.png" alt="">
                 </div>
-                <!-- Card Right 1: End -->
-
-                <!-- Card Left 2: Start -->
+                <!-- Card 1: End -->
+                <!-- Card 1: Start -->
                 <div class="card-item flex flex-col relative">
-                    <a href="#" class="card-right hidden md:flex flex-row items-center justify-between shadow-2xl hover:shadow-gray1 absolute bg-green4 rounded-50 mx-auto px-8 py-12 right-0 -translate-x-10 top-64 ease-in-out duration-300" style="min-width: 590px;">
-                        <div class="pr-5 text-left">
-                            <h3 class="text-headlineSemibold2 text-lightgreen1">Web UI Design</h3>
-                            <p class="text-subtitle1 text-lightgreen1">Lorem ipsum dolor sit amet consectetur. <br/> Gravida nulla lorem sapien id.</p>
-                        </div>
-                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M18.75 36L16.6 33.85L26.5 23.95L16.6 14.05L18.75 11.9L30.8 23.95L18.75 36Z" fill="#FEFFFE"/>
-                        </svg>                            
-                    </a>
-                    <img class="rounded-50 md:rounded-100 mb-16 text-left" src="./img/img-project-view/project-view3.png" width="924" alt="">
+                    <div class="flex flex-col mb-auto pb-3">
+                        <h3 class="text-portfolioTitle text-lightgreen2">Web Design</h3>
+                        <h1 class="text-portfolioSubtitle text-lightgreen1">Babe Furniture Store - Landing Page</h1>
+                    </div>
+                    <img class="rounded-50 md:rounded-100 mb-16 w-full md:w-924px" src="./img/img-project-view/project-view3.png" alt="">
                 </div>
-                <!-- Card Left 2: End -->
-
-                <!-- Card Right 2: Start -->
+                <!-- Card 1: End -->
+                <!-- Card 1: Start -->
                 <div class="card-item flex flex-col relative">
-                    <a href="#" class="card-right hidden md:flex flex-row items-center justify-between shadow-2xl hover:shadow-gray1 absolute bg-green4 rounded-50 mx-auto px-8 py-12 left-0 translate-x-10 top-64 ease-in-out duration-300" style="min-width: 590px;">
-                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M29.25 36L31.4 33.85L21.5 23.95L31.4 14.05L29.25 11.9L17.2 23.95L29.25 36Z" fill="#FEFFFE"/>
-                        </svg>                            
-                        <div class="pl-5 text-right">
-                            <h3 class="text-headlineSemibold2 text-lightgreen1">Web UI/UX Design</h3>
-                            <p class="text-subtitle1 text-lightgreen1">Lorem ipsum dolor sit amet consectetur. <br> Gravida nulla lorem sapien id.</p>
-                        </div>
-                    </a>
-                    <img class="rounded-50 md:rounded-100 mb-16 self-end text-right" src="./img/img-project-view/project-view4.png" width="924" alt="">
+                    <div class="flex flex-col mb-auto pb-3">
+                        <h3 class="text-portfolioTitle text-lightgreen2">Web Design</h3>
+                        <h1 class="text-portfolioSubtitle text-lightgreen1">Web Travel - Landing Page</h1>
+                    </div>
+                    <img class="rounded-50 md:rounded-100 mb-16 w-full md:w-924px" src="./img/img-project-view/project-view4.png" alt="">
                 </div>
-                <!-- Card Right 2: End -->
+                <!-- Card 1: End -->
             </figure>
         </div>
         <!-- Project View: End -->
 
 
         <!-- Services: Start -->
-        <div id="services" class="card-service container flex flex-col selt-center mx-auto px-5 md:px-11 py-5 bg-green4">
-            <h1 class="text-headlineSemibold1 text-lightgreen1 mb-32">Services</h1>
+        <div id="services" class="card-service container flex flex-col selt-center mx-auto mb-125px px-5 md:px-11 py-5 bg-green4">
+            <h1 class="text-headlineSemibold1 text-center text-lightgreen1 mb-32">SERVICES</h1>
             
             <div class="flex flex-col selt-center justify-center mb-52">
                 <!-- Card Service 1: Start -->
@@ -207,64 +173,60 @@
 
 
         <!-- Footer: Start -->
-        <footer class="footer flex flex-col items-center justify-between bg-black1 w-full" style="height: 620px;">
-            <div class="container mx-auto px-5 md:px-36 flex flex-col items-center justify-center md:flex-row md:items-start md:justify-between">
-                <div class="left-item flex flex-col items-center md:items-start justify-center md:justify-between">
-                    <h1 class="text-headlineSemibold1 text-green3 my-11">HIRE ME</h1>
+        <footer class="footer flex flex-col items-center justify-between bg-black1 w-full">
+            <div class="container mx-auto px-5 flex flex-col items-center justify-center">
 
+                <div class="flex flex-col items-center justify-center my-auto py-10">
                     <!-- Footer Brand: Start -->
-                    <a href="#navbar" class="navbar-brand">
-                        <h1 class="md:text-headline2 text-xl text-lightgreen1 mb-3">Marley Westervelt</h1>
+                    <a href="#navbar" class="navbar-brand mb-auto pb-9">
+                        <h1 class="md:text-headline2 text-xl text-lightgreen2">MARLEY WESTERVELT</h1>
                     </a>
                     <!-- Footer Brand: End -->
 
                     <!-- Footer Links: Start -->
-                    <ul class="navbar-nav flex flex-row md:flex-col items-center md:items-start justify-between">
-                        <li class="nav-item mx-2 px-1 md:mx-0 md:px-0 my-3 py-1">
+                    <ul class="navbar-nav flex flex-row items-center justify-between">
+                        <li class="nav-item mx-auto px-11">
                             <a href="#projects" class="nav-link text-textButton hover:underline hover:underline-offset-4 text-lightgreen1">Projects</a>
                         </li>
-                        <li class="nav-item mx-2 px-1 md:mx-0 md:px-0 my-3 py-1">
-                            <a href="#about" class="nav-link text-textButton hover:underline hover:underline-offset-4 text-lightgreen1">About</a>
-                        </li>
-                        <li class="nav-item mx-2 px-1 md:mx-0 md:px-0 my-3 py-1">
+                        <li class="nav-item mx-auto px-11">
                             <a href="#services" class="nav-link text-textButton hover:underline hover:underline-offset-4 text-lightgreen1">Services</a>
                         </li>
                     </ul>
                     <!-- Footer Links: End -->
                 </div>
 
-                <div class="right-item flex flex-col items-center md:items-start justify-center md:justify-between">
-                    <button class="text-headline3 text-lightgreen1 my-11 px-16 py-6 rounded-100 bg-green3 hover:bg-lightgreen1 hover:text-green3 ease-in-out duration-300 cursor-pointer">Write a Message</button>
+                <div class="flex flex-col items-center justify-center my-auto py-10">
+                    <button class="text-headline3 text-lightgreen1 mb-14 px-16 py-6 rounded-100 bg-green3 hover:bg-lightgreen1 hover:text-green3 ease-in-out duration-300 cursor-pointer">Write a Message</button>
 
-                    <ul class="media-social">
-                        <li class="dribbble my-6 py-1">
+                    <ul class="media-social flex flex-col md:flex-row items-start md:items-center md:justify-center">
+                        <li class="dribbblemd:mx-auto mb-8 md:mb-0 md:px-20">
                             <a href="" class="flex flex-row items-center">
                                 <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <circle cx="22.5" cy="22.5" r="21.5" stroke="#FEFFFE" stroke-width="2"/>
                                     <path d="M34.7677 22.5839V22.4997C34.7688 20.6763 34.3622 18.8757 33.5777 17.2297C32.7932 15.5837 31.6506 14.1339 30.2334 12.9864L30.1733 12.9263L30.1132 12.8782C27.9482 11.1597 25.2641 10.2269 22.5 10.2322C20.6625 10.2275 18.8483 10.643 17.196 11.4469L17.0517 11.5071C15.3758 12.3428 13.9123 13.5494 12.7724 15.0353C11.6325 16.5211 10.8461 18.2471 10.4728 20.0823V20.1064C10.3122 20.894 10.2317 21.6959 10.2323 22.4997C10.2328 24.4054 10.6776 26.2847 11.5315 27.9883C12.3855 29.6919 13.6249 31.173 15.1514 32.3138L15.2717 32.41H15.2957C17.3869 33.9388 19.9095 34.7642 22.5 34.7673C23.8891 34.7715 25.2685 34.5355 26.5772 34.0697L26.6494 34.0456C29.0065 33.1931 31.0471 31.6409 32.498 29.5969C33.9488 27.5528 34.7407 25.1144 34.7677 22.608V22.5839ZM33.3004 21.8142C32.9155 21.7901 32.5186 21.7781 32.1217 21.7781C30.2831 21.7759 28.4533 22.031 26.6854 22.5358C26.2401 21.186 25.6599 19.8845 24.9535 18.6511L24.8934 18.5669C26.7327 17.4833 28.3889 16.1153 29.8005 14.5138C31.8706 16.4007 33.1257 19.0187 33.3004 21.8142ZM28.6699 13.6118C27.3623 15.0964 25.823 16.3596 24.1116 17.3522C22.728 15.3591 20.9965 13.6317 19.0001 12.2528C20.6058 11.7068 22.3173 11.5453 23.9968 11.7814C25.6763 12.0174 27.2769 12.6444 28.6699 13.6118ZM17.4125 12.9503C19.5418 14.263 21.3829 15.9936 22.8247 18.0377C20.3201 19.2351 17.5788 19.8557 14.8026 19.8538C13.8848 19.852 12.9684 19.7836 12.0604 19.6493C12.4505 18.2277 13.1263 16.9004 14.0465 15.7486C14.9667 14.5968 16.112 13.6447 17.4125 12.9503ZM11.6756 22.4997C11.6773 22.0211 11.7094 21.5431 11.7718 21.0685C12.7753 21.2168 13.7882 21.2932 14.8026 21.297C17.8595 21.3032 20.8764 20.6035 23.6185 19.2525L23.7027 19.3847C24.3638 20.524 24.9039 21.7292 25.3143 22.9808C24.226 23.3696 23.1753 23.8567 22.1753 24.4361C19.4808 25.9798 17.1863 28.1342 15.4761 30.7262C14.2852 29.7116 13.3286 28.4506 12.6724 27.0303C12.0163 25.61 11.6761 24.0643 11.6756 22.4997ZM16.6307 31.5921C18.8132 28.2844 21.9881 25.7538 25.6992 24.3639C26.0458 25.7892 26.2194 27.2509 26.2164 28.7177C26.2216 30.0977 26.0683 31.4738 25.7593 32.8189C24.2414 33.3 22.6359 33.4395 21.0577 33.2274C19.4796 33.0153 17.9678 32.4569 16.6307 31.5921ZM27.371 32.1694C27.5631 31.0289 27.6596 29.8743 27.6596 28.7177C27.6612 27.1007 27.4674 25.4894 27.0823 23.9189C28.7226 23.4584 30.418 23.2237 32.1217 23.2214C32.5186 23.2214 32.9035 23.2334 33.3004 23.2574C33.167 25.1288 32.5507 26.9337 31.5114 28.4957C30.4722 30.0577 29.0456 31.3235 27.371 32.1694Z" fill="#FEFFFE"/>
                                 </svg>
-                                <p class="text-textButton text-lightgreen1 pl-3">DRIBBBLE</p> 
+                                <p class="text-textButton text-lightgreen1 pl-3">Dribbble</p> 
                             </a>                                                   
                         </li>
-                        <li class="twitter my-6 py-1">
+                        <li class="twitter md:mx-auto mb-8 md:mb-0 md:px-20">
                             <a href="" class="flex flex-row items-center">
                                 <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <circle cx="22.5" cy="22.5" r="21.5" stroke="#FEFFFE" stroke-width="2"/>
                                     <path d="M36.6559 16.4503L33.0237 20.0704C32.3021 28.4773 25.2061 35.0079 16.727 35.0079C14.983 35.0079 13.5398 34.7313 12.4453 34.1901C11.5673 33.7451 11.2065 33.276 11.1103 33.1317C11.0307 33.0108 10.9794 32.8735 10.9602 32.73C10.941 32.5865 10.9545 32.4405 10.9996 32.303C11.0447 32.1654 11.1202 32.0398 11.2206 31.9355C11.321 31.8312 11.4436 31.7508 11.5793 31.7005C11.6034 31.6885 14.4418 30.6061 16.282 28.5254C15.1407 27.7128 14.1377 26.722 13.3112 25.5908C11.6635 23.3538 9.91959 19.4691 10.966 13.6721C10.9988 13.4997 11.0777 13.3395 11.1941 13.2082C11.3105 13.077 11.4603 12.9796 11.6274 12.9264C11.7952 12.8715 11.9748 12.8637 12.1466 12.904C12.3184 12.9444 12.4758 13.0311 12.6016 13.1549C12.6377 13.203 16.6428 17.1479 21.5378 18.4227V17.6891C21.5425 16.9262 21.6975 16.1718 21.9938 15.4688C22.2901 14.7658 22.722 14.1281 23.2647 13.592C23.8075 13.0559 24.4506 12.632 25.1572 12.3445C25.8638 12.0569 26.6201 11.9114 27.383 11.9161C28.3843 11.9304 29.3647 12.2038 30.2289 12.7096C31.0931 13.2155 31.8115 13.9366 32.3141 14.8026H35.9704C36.1603 14.802 36.3462 14.8577 36.5046 14.9625C36.663 15.0674 36.7868 15.2168 36.8604 15.3919C36.9297 15.5696 36.9473 15.7634 36.9111 15.9507C36.8749 16.138 36.7865 16.3112 36.6559 16.4503Z" fill="#FEFFFE"/>
                                 </svg>
-                                <p class="text-textButton text-lightgreen1 pl-3">TWITTER</p>
+                                <p class="text-textButton text-lightgreen1 pl-3">Twitter</p>
                             </a>                                                  
                         </li>
-                        <li class="instagram my-6 py-1">
+                        <li class="instagram md:mx-auto mb-8 md:mb-0 md:px-20">
                             <a href="" class="flex flex-row items-center">
                                 <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <circle cx="22.5" cy="22.5" r="21.5" stroke="#FEFFFE" stroke-width="2"/>
                                     <path d="M22.5 16.9674C21.4058 16.9674 20.3361 17.2919 19.4263 17.8998C18.5165 18.5077 17.8074 19.3717 17.3886 20.3827C16.9699 21.3936 16.8603 22.506 17.0738 23.5791C17.2873 24.6523 17.8142 25.6381 18.5879 26.4118C19.3617 27.1855 20.3474 27.7125 21.4206 27.9259C22.4938 28.1394 23.6062 28.0298 24.6172 27.6111C25.6281 27.1924 26.4922 26.4833 27.1001 25.5735C27.708 24.6637 28.0325 23.594 28.0325 22.4998C28.0325 21.0325 27.4496 19.6253 26.412 18.5878C25.3745 17.5503 23.9673 16.9674 22.5 16.9674ZM22.5 26.589C21.6912 26.589 20.9006 26.3492 20.2281 25.8998C19.5557 25.4505 19.0315 24.8119 18.722 24.0647C18.4125 23.3175 18.3315 22.4953 18.4893 21.7021C18.6471 20.9088 19.0366 20.1802 19.6085 19.6083C20.1803 19.0365 20.909 18.647 21.7022 18.4892C22.4954 18.3314 23.3177 18.4124 24.0649 18.7219C24.8121 19.0314 25.4507 19.5555 25.9001 20.228C26.3494 20.9005 26.5892 21.6911 26.5892 22.4998C26.586 23.5834 26.1542 24.6216 25.388 25.3878C24.6218 26.154 23.5835 26.5858 22.5 26.589ZM27.7919 10.7134H17.208C15.4855 10.7134 13.8336 11.3976 12.6156 12.6156C11.3976 13.8336 10.7134 15.4855 10.7134 17.2079V27.7917C10.7134 29.5142 11.3976 31.1661 12.6156 32.384C13.8336 33.602 15.4855 34.2863 17.208 34.2863H27.7919C29.5144 34.2863 31.1664 33.602 32.3843 32.384C33.6023 31.1661 34.2866 29.5142 34.2866 27.7917V17.2079C34.2866 15.4855 33.6023 13.8336 32.3843 12.6156C31.1664 11.3976 29.5144 10.7134 27.7919 10.7134ZM32.8433 27.7917C32.8433 29.1314 32.3111 30.4162 31.3638 31.3635C30.4165 32.3108 29.1316 32.843 27.7919 32.843H17.208C15.8683 32.843 14.5835 32.3108 13.6362 31.3635C12.6888 30.4162 12.1566 29.1314 12.1566 27.7917V17.2079C12.1566 15.8683 12.6888 14.5834 13.6362 13.6361C14.5835 12.6888 15.8683 12.1566 17.208 12.1566H27.7919C29.1316 12.1566 30.4165 12.6888 31.3638 13.6361C32.3111 14.5834 32.8433 15.8683 32.8433 17.2079V27.7917ZM29.9568 16.2458C29.9568 16.4837 29.8863 16.7162 29.7541 16.914C29.622 17.1118 29.4341 17.2659 29.2144 17.3569C28.9946 17.448 28.7528 17.4718 28.5195 17.4254C28.2862 17.379 28.0719 17.2644 27.9036 17.0962C27.7354 16.928 27.6209 16.7137 27.5745 16.4804C27.5281 16.2471 27.5519 16.0053 27.6429 15.7855C27.734 15.5658 27.8881 15.3779 28.0859 15.2458C28.2837 15.1136 28.5162 15.0431 28.7541 15.0431C29.0731 15.0431 29.379 15.1698 29.6045 15.3954C29.8301 15.6209 29.9568 15.9268 29.9568 16.2458Z" fill="#FEFFFE"/>
                                 </svg>
-                                <p class="text-textButton text-lightgreen1 pl-3">INSTAGRAM</p>
+                                <p class="text-textButton text-lightgreen1 pl-3">Instagram</p>
                             </a>                                                                                    
                         </li>
-                        <li class="behance my-6 py-1">
+                        <li class="behance md:mx-auto mb-8 md:mb-0 md:px-20">
                             <a href="" class="flex flex-row items-center">
                                 <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <circle cx="22.5" cy="22.5" r="21.5" stroke="#FEFFFE" stroke-width="2"/>
@@ -277,11 +239,12 @@
                                     </clipPath>
                                     </defs>
                                 </svg>
-                                <p class="text-textButton text-lightgreen1 pl-3">BEHANCE</p> 
+                                <p class="text-textButton text-lightgreen1 pl-3">Behance</p> 
                             </a>
                         </li>
                     </ul>
                 </div>
+
             </div>
 
             <div class="copyright container mx-auto px-5 md:px-11 py-11">
