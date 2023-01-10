@@ -1,7 +1,7 @@
 # marley-westervelt-personal-website
 Marley Westervelt a professional UI/UX Designer - PORTFOLIO
 
-<img width="1600" alt="view" src="https://user-images.githubusercontent.com/73063960/209516314-21316c7d-13ad-49ab-a636-0893035ae0b0.png">
+<img width="1600" alt="view" src="https://user-images.githubusercontent.com/73063960/211521142-17803cda-8888-4fab-8199-e4a336f13480.png">
 
 
 ✨ Hello Guys ✨
