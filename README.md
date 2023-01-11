@@ -7,7 +7,7 @@ Marley Westervelt a professional UI/UX Designer - PORTFOLIO
 
 ✨ Hello Guys ✨
 
-Hello guys, here is my new exploration of Personal Website Design. I hope you guys will like it.
+This is my new exploration of Personal Website Design. I hope you guys will like it.
 
 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 
