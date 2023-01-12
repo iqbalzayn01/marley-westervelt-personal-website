@@ -22,6 +22,6 @@ Tailwindcss
 
 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 
-link :
+Demo :
 
 https://marley-westervelt-web-portfolio.netlify.app
